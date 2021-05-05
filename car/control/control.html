@@ -63,10 +63,10 @@
 
 <script>
   function input_id(){
-    var id = prompt("請輸入開發版 ID :");
+    var id = prompt("請輸入開發版 ID :", "devide id");
     if (id != null) {
-      location.href="../car/car.html?"+"device_id="+encodeURI(id.value);
-      console.log('=> ' + id);
+      alert("你的 device id 為 ：" + id)
+      location.href="../car/car.html?"+"device_id="+encodeURI(id);
     }
   }
 </script>
