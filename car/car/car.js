@@ -63,7 +63,4 @@ boardReady({board: 'Smart', device: device_id, transport: 'mqtt'}, function (boa
   controllerBtnEvent(getElement('.st5_right'),['mouseup', 'touchend'], function () {
     car.stop();
   });
-  controllerBtnEvent(getElement('#btn-group .right'),['mouseup', 'touchend'], function () {
-    car.stop();
-  });
 });
