@@ -39,8 +39,9 @@ function controllerBtnEvent(c, e, callback) {
 boardReady({board: 'Smart', device: device_id, transport: 'mqtt'}, function (board) {
   board.samplingInterval = 50;
   car = getToyCar(board, 14, 16, 2, 5);
-  controllerBtnEvent(getElement('#btn-group .up'),['mousedown', 'touchstart'], function () {
+  controllerBtnEvent(getElement('st5_up'),['mousedown', 'touchstart'], function () {
     car.goFront();
+    console.log('go');
   });
   controllerBtnEvent(getElement('#btn-group .down'),['mousedown', 'touchstart'], function () {
     car.goBack();
