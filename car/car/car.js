@@ -39,28 +39,28 @@ function controllerBtnEvent(c, e, callback) {
 boardReady({board: 'Smart', device: device_id, transport: 'mqtt'}, function (board) {
   board.samplingInterval = 50;
   car = getToyCar(board, 14, 16, 2, 5);
-  controllerBtnEvent(getElement('#st5_front'),['mousedown', 'touchstart'], function () {
+  controllerBtnEvent(getElement('.st5_front'),['mousedown', 'touchstart'], function () {
     car.goFront();
   });
-  controllerBtnEvent(getElement('#st5_back'),['mousedown', 'touchstart'], function () {
+  controllerBtnEvent(getElement('.st5_back'),['mousedown', 'touchstart'], function () {
     car.goBack();
   });
-  controllerBtnEvent(getElement('#st5_left'),['mousedown', 'touchstart'], function () {
+  controllerBtnEvent(getElement('.st5_left'),['mousedown', 'touchstart'], function () {
     car.turnLeft();
   });
-  controllerBtnEvent(getElement('#st5_right'),['mousedown', 'touchstart'], function () {
+  controllerBtnEvent(getElement('.st5_right'),['mousedown', 'touchstart'], function () {
     car.turnRight();
   });
-  controllerBtnEvent(getElement('#btn-group .center'),['mousedown', 'touchstart'], function () {
+  controllerBtnEvent(getElement('.st5_front'),['mousedown', 'touchstart'], function () {
     car.stop();
   });
-  controllerBtnEvent(getElement('#btn-group .up'),['mouseup', 'touchend'], function () {
+  controllerBtnEvent(getElement('.st5_back'),['mouseup', 'touchend'], function () {
     car.stop();
   });
-  controllerBtnEvent(getElement('#btn-group .down'),['mouseup', 'touchend'], function () {
+  controllerBtnEvent(getElement('.st5_left'),['mouseup', 'touchend'], function () {
     car.stop();
   });
-  controllerBtnEvent(getElement('#btn-group .left'),['mouseup', 'touchend'], function () {
+  controllerBtnEvent(getElement('.st5_right'),['mouseup', 'touchend'], function () {
     car.stop();
   });
   controllerBtnEvent(getElement('#btn-group .right'),['mouseup', 'touchend'], function () {
