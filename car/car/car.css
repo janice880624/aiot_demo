@@ -40,11 +40,11 @@ html,body{
   fill:#FFFFFF;
 }
 
-.st5_up{
+.st5_front, .st5_back, .st5_right, .st5_left{
   fill:#FFFFFF;
 }
 
-.st5_up:hover{
+.st5_front:hover, .st5_back:hover, .st5_right:hover, .st5_left:hover{
   fill:#9AFF9A;
 }
 
