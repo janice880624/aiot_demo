@@ -1,24 +1,22 @@
-var loc = location.href;
-var n1 = loc.length; //地址的總長度
-var n2 = loc.indexOf("="); //取得=號的位置
-var device_id = decodeURI(loc.substr(n2+1, n1-n2));//從=號後面的内容
-alert("Device ID:" + id); 
+let loc = location.href;
+let n1 = loc.length; //地址的總長度
+let n2 = loc.indexOf("="); //取得=號的位置
+let device_id = decodeURI(loc.substr(n2+1, n1-n2));//從=號後面的内容
+alert("Device ID:" + device_id); 
 // document.write("device_id:"+device_id)
-console.log('=> ' + id);
-
-
+console.log('=> ' + device_id);
 
 // 車子控制
-var car;
+let car;
 
 function getElement(dom) {
-  var element = document.querySelector(dom);
+  let element = document.querySelector(dom);
   return element;
 }
 
 function controllerBtnEvent(c, e, callback) {
   if (e !== 'click') {
-    var _u = navigator.userAgent;
+    let _u = navigator.userAgent;
     if (_u.indexOf('Android') > -1 || _u.indexOf('iPhone') > -1 || _u.indexOf('iPad') > -1) {
       c.addEventListener(e[1], function () {
         callback();
@@ -41,17 +39,21 @@ boardReady({board: 'Smart', device: device_id, transport: 'mqtt'}, function (boa
   car = getToyCar(board, 14, 16, 2, 5);
   controllerBtnEvent(getElement('.st5_front'),['mousedown', 'touchstart'], function () {
     car.goFront();
+    console.log('F');
   });
   controllerBtnEvent(getElement('.st5_back'),['mousedown', 'touchstart'], function () {
     car.goBack();
+    console.log('B');
   });
   controllerBtnEvent(getElement('.st5_left'),['mousedown', 'touchstart'], function () {
     car.turnLeft();
+    console.log('L');
   });
   controllerBtnEvent(getElement('.st5_right'),['mousedown', 'touchstart'], function () {
     car.turnRight();
+    console.log('R');
   });
-  controllerBtnEvent(getElement('.st5_front'),['mousedown', 'touchstart'], function () {
+  controllerBtnEvent(getElement('.st5_front'),['mouseup', 'touchend'], function () {
     car.stop();
   });
   controllerBtnEvent(getElement('.st5_back'),['mouseup', 'touchend'], function () {

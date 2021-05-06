@@ -30,15 +30,19 @@ boardReady({board: 'Smart', device: '10ywPWNV', transport: 'mqtt'}, function (bo
   car = getToyCar(board, 14, 16, 2, 5);
   controllerBtnEvent(getElement('#btn-group .up'),['mousedown', 'touchstart'], function () {
     car.goFront();
+    console.log('F');
   });
   controllerBtnEvent(getElement('#btn-group .down'),['mousedown', 'touchstart'], function () {
     car.goBack();
+    console.log('B');
   });
   controllerBtnEvent(getElement('#btn-group .left'),['mousedown', 'touchstart'], function () {
     car.turnLeft();
+    console.log('L');
   });
   controllerBtnEvent(getElement('#btn-group .right'),['mousedown', 'touchstart'], function () {
     car.turnRight();
+    console.log('R');
   });
   controllerBtnEvent(getElement('#btn-group .center'),['mousedown', 'touchstart'], function () {
     car.stop();

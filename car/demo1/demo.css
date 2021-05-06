@@ -8,40 +8,40 @@ html,body{
 }
 
 .btn{
-position:relative;
-display:inline-block;
-width:calc(33% - 8px);
-height:60px;
-background:#555;
-margin:3px 1px;
-text-align:center;
-line-height:60px;
-border-radius:5px;
-color:#fff;
-font-size:22px;
-vertical-align: middle;
-cursor:pointer;
+  position:relative;
+  display:inline-block;
+  width:calc(33% - 8px);
+  height:60px;
+  background:#555;
+  margin:3px 1px;
+  text-align:center;
+  line-height:60px;
+  border-radius:5px;
+  color:#fff;
+  font-size:22px;
+  vertical-align: middle;
+  cursor:pointer;
 }
 .btn-group-content {
-position:relative;
-box-sizing:border-box;
-width:100%;
-max-width:550px;
-padding:20px 10px;
-margin:0 auto;
-overflow: hidden;
-pointer-events: auto!important;
+  position:relative;
+  box-sizing:border-box;
+  width:100%;
+  max-width:550px;
+  padding:20px 10px;
+  margin:0 auto;
+  overflow: hidden;
+  pointer-events: auto!important;
 }
 
 #btn-group{
-position:relative;
-box-sizing:border-box;
-width:100%;
-max-width:550px;
-padding:20px 10px;
-margin:0 auto;
-overflow: hidden;
-pointer-events: auto!important;
+  position:relative;
+  box-sizing:border-box;
+  width:100%;
+  max-width:550px;
+  padding:20px 10px;
+  margin:0 auto;
+  overflow: hidden;
+  pointer-events: auto!important;
 }
 
 .btn:active{

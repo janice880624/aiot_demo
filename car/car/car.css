@@ -36,15 +36,12 @@ html,body{
 .st4{
   fill:#7FCCF2;
 }
-.st5{
-  fill:#FFFFFF;
-}
 
 .st5_front, .st5_back, .st5_right, .st5_left{
   fill:#FFFFFF;
 }
 
-.st5_front:hover, .st5_back:hover, .st5_right:hover, .st5_left:hover{
+.st5_front:active, .st5_back:active, .st5_right:active, .st5_left:active{
   fill:#9AFF9A;
 }
 
