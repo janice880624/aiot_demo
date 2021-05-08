@@ -11,8 +11,9 @@ html,body{
   background-size : 100px 100px;
 }
 
-.st0{opacity:0.92;
-  fill:#464544;
+.st0{
+  opacity:0.92;
+  /* fill:#464544; */
   stroke:#231815;
   stroke-width:3;
   stroke-miterlimit:10;
@@ -30,18 +31,20 @@ html,body{
   fill:#403F3E;
 }
 
-.st3{
+.st3_add, .st3_less{
   fill:#F0919B;
 }
+
+
 .st4{
   fill:#7FCCF2;
 }
 
-.st5_front, .st5_back, .st5_right, .st5_left{
+.st5_front, .st5_back, .st5_right, .st5_left, .st5_stop{
   fill:#FFFFFF;
 }
 
-.st5_front:active, .st5_back:active, .st5_right:active, .st5_left:active{
+.st5_front:active, .st5_back:active, .st5_right:active, .st5_left:active, .st5_stop:active, .st3_add:active, .st3_less:active{
   fill:#9AFF9A;
 }
 
