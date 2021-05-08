@@ -7,6 +7,53 @@ html,body{
   user-select: none;
 }
 
+.control_svg{
+  background-size : 100px 100px;
+}
+
+.st0{
+  opacity:0.92;
+  /* fill:#464544; */
+  stroke:#231815;
+  stroke-width:3;
+  stroke-miterlimit:10;
+  enable-background:new 
+}
+
+.st1{
+  fill:#646461;
+  stroke:#231815;
+  stroke-width:3;
+  stroke-miterlimit:10;
+}
+
+.st2{
+  fill:#403F3E;
+}
+
+.st3_add, .st3_less{
+  fill:#F0919B;
+}
+
+
+.st4{
+  fill:#7FCCF2;
+}
+
+.st5_front, .st5_back, .st5_right, .st5_left, .st5_stop{
+  fill:#FFFFFF;
+}
+
+.st5_front:active, .st5_back:active, .st5_right:active, .st5_left:active, .st5_stop:active, .st3_add:active, .st3_less:active{
+  fill:#9AFF9A;
+}
+
+.st6{
+  opacity:0.92;
+  enable-background:new
+}
+
+
 .btn{
   position:relative;
   display:inline-block;
@@ -22,6 +69,7 @@ html,body{
   vertical-align: middle;
   cursor:pointer;
 }
+
 .btn-group-content {
   position:relative;
   box-sizing:border-box;
