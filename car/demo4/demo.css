@@ -13,7 +13,7 @@ html,body{
 
 .st0{
   opacity:0.92;
-  fill:#464544;
+  /* fill:#464544; */
   stroke:#231815;
   stroke-width:3;
   stroke-miterlimit:10;
@@ -51,12 +51,6 @@ html,body{
 .st6{
   opacity:0.92;
   enable-background:new
-}
-
-#st7_connect{
-  fill:#7B7B7B;
-  stroke:#000000;
-  stroke-miterlimit:10;
 }
 
 
@@ -103,45 +97,45 @@ html,body{
 }
 
 @media (max-width:480px){
-  .btn{
-    height:50px;
-    line-height:50px;
-    font-size:20px;
-  }
+.btn{
+  height:50px;
+  line-height:50px;
+  font-size:20px;
+}
 }
 
 @media (max-width:400px){
-  .btn{
-    height:45px;
-    line-height:45px;
-    font-size:18px;
-  }
+.btn{
+  height:45px;
+  line-height:45px;
+  font-size:18px;
+}
 }
 
 .btn-group{
-  width:100%;
-  text-align:center;
+width:100%;
+text-align:center;
 }
 
 .btn-group.direction{
-  margin-bottom:10px;
+margin-bottom:10px;
 }
 
 .btn-group.direction .btn{
-  height:80px;
-  line-height:80px;
+height:80px;
+line-height:80px;
 }
 
 @media (max-width:480px){
-  .btn-group.direction .btn{
-    height:70px;
-    line-height:70px;
-  }
+.btn-group.direction .btn{
+  height:70px;
+  line-height:70px;
+}
 }
 
 @media (max-width:400px){
-  .btn-group.direction .btn{
-    height:60px;
-    line-height:60px;
-  }
+.btn-group.direction .btn{
+  height:60px;
+  line-height:60px;
+}
 }
