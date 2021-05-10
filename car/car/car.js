@@ -43,8 +43,14 @@ function controllerBtnEvent(c, e, callback) {
   }
 }
 
-
-
+window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function() {
+  if (window.orientation === 180 || window.orientation === 0) {
+      alert('目前您的螢幕為縱向！');
+  }
+  if (window.orientation === 90 || window.orientation === -90 ){
+      alert('目前您的螢幕為橫向！');
+  }
+}, false);
 
 boardReady({board: 'Smart', device: device_id, transport: 'mqtt'}, function (board) {
   board.samplingInterval = 50;
@@ -108,12 +114,5 @@ boardReady({board: 'Smart', device: device_id, transport: 'mqtt'}, function (boa
     car.stop();
   });
 
-  board.on(BoardEvent.READY, function() {
-    st7_connect.style.fill = "#9AFF9A";
-  });
-  
-  board.on(BoardEvent.ERROR, function() {
-    st7_connect.style.fill = "#F0919B";
-  });
-
 });
+
