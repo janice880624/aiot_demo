@@ -6,27 +6,24 @@ alert("Device ID:" + device_id);
 // document.write("device_id:"+device_id)
 console.log('=> ' + device_id);
 
-// boardReady({board: 'Smart', device: device_id, transport: 'mqtt'}, function (board) {
-//   board.samplingInterval = 250;
-//   rgbled = getRGBLedCathode(board, 15, 12, 13);
-//   document.getElementById('light').addEventListener('click', function () {
-//     if (document.getElementById('light').className === 'on') {
-//       document.getElementById('light').className = 'off';
-//       rgbled.setColor('#000000');
-//     } else {
-//       document.getElementById('light').className = 'on';
-//       rgbled.setColor('#3333ff');
-//     }
-//   });
-// });
-
-
-
-
-document.getElementById('light').addEventListener('click', function () {
-  if (document.getElementById('light').className === 'on') {
-    document.getElementById('light').className = 'off';
-  } else {
-    document.getElementById('light').className = 'on';
-  }
+boardReady({board: 'Smart', device: device_id, transport: 'mqtt'}, function (board) {
+  board.samplingInterval = 250;
+  rgbled = getRGBLedCathode(board, 15, 12, 13);
+  document.getElementById('light').addEventListener('click', function () {
+    if (document.getElementById('light').className === 'on') {
+      document.getElementById('light').className = 'off';
+      rgbled.setColor('#000000');
+    } else {
+      document.getElementById('light').className = 'on';
+      rgbled.setColor('#3333ff');
+    }
+  });
 });
+
+// document.getElementById('light').addEventListener('click', function () {
+//   if (document.getElementById('light').className === 'on') {
+//     document.getElementById('light').className = 'off';
+//   } else {
+//     document.getElementById('light').className = 'on';
+//   }
+// });
