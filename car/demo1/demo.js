@@ -43,8 +43,8 @@ function deviceIsConnected() {
   }
 }
 
-
-boardReady({board: 'Smart', device: '10VK7gDV', transport: 'mqtt'}, function (board) {
+// car demo 1
+boardReady({board: 'Smart', device: 'GKw5K', transport: 'mqtt'}, function (board) {
   board.samplingInterval = 50;
   car = getToyCar(board, 14, 16, 2, 5);
   speed = 100;
